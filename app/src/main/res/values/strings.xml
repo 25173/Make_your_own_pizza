@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Make your own pizza</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="button">Button</string>
+    <string name="set_table">Set Table</string>
+    <string name="bestellen">bestellen</string>
+    <string name="make_your_own_pizza">Maak je eigen pizza</string>
+    <string name="drinken">drinken</string>
+    <string name="item">item</string>
+    <string name="standaard">standaard</string>
+    <string name="glutenvrij">Glutenvrij</string>
+    <string name="bodem">bodem</string>
+    <string name="toppings">toppings</string>
+    <string name="Pizza_Menu">Pizza menu</string>
+    <string name="maak_je_eigen_pizza">maak je eigen \n pizza</string>
+    <string name="tomaat">tomaat</string>
+    <string name="chees">kaas</string>
+    <string name="drinkmenu">DrinkMenu</string>
+    <string name="anulleren">anulleren</string>
+    <string name="toevoegen">toevoegen</string>
+    <string name="olijf">olijven</string>
+    <string name="mozzarella">Mozarella</string>
+    <string name="rucola">rucola</string>
+    <string name="ham">ham</string>
+    <string name="extra_toppings">Extra topping</string>
+    <string name="x">X</string>
+    <string name="betalen">Afrekenen</string>
+    <string name="magerita">magerita</string>
+    <string name="salami">salami</string>
+    <string name="quatro_stagione">Quatro Stagione</string>
+    <string name="quatroformazzi">QuatroFormazzi</string>
+    <string name="napolitana">Napolitana</string>
+    <string name="vegan">vegan</string>
+    <string name="_90_00" translatable="false"> </string>
+    <string name="extra_toppings_price">(+0,99)</string>
+    <string name="_1">1</string>
+</resources>

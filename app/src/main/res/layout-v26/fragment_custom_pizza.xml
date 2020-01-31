@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/fab_margin"
+    tools:context=".ui.menu.CustomPizza">
+
+
+    <TableLayout
+        android:id="@+id/custom_pizza_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="4">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/make_your_own_pizza"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="32dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/_90_00"
+                android:textColor="#000000"
+                android:textSize="36sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/bodem"
+                android:textSize="@dimen/font_size_menu"
+                tools:ignore="SpUsage" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Bodem_radio_group"
+            android:paddingBottom="@dimen/font_size_menu">
+
+            <RadioGroup
+                android:id="@+id/bodem_pizza"
+                android:layout_width="221dp"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <RadioButton
+                    android:id="@+id/checkbox_standaard_bodem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/standaard"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/checkbox_glutenvrij"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/glutenvrij"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/toppings"
+                android:textSize="20sp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/top_tomaat"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:checked="true"
+                android:text="@string/tomaat"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/top_cheese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:checked="true"
+                android:text="@string/chees"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/top_olijf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/olijf"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/top_ham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/ham"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/top_rucola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/rucola"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/top_mozzarella"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/mozzarella"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow android:paddingTop="@dimen/font_size_menu">
+
+            <TextView
+                android:id="@+id/extraToppings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/extra_toppings"
+                android:textSize="@dimen/font_size_menu"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/extra_toppings_price"
+                android:textSize="@dimen/font_size_menu"
+                tools:ignore="SpUsage" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/extra_top_tomaat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/tomaat"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/extra_top_cheese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/chees"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/extra_top_olijf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/olijf"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/extra_top_ham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/ham"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/extra_top_rucola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/rucola"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/extra_top_mozzarella"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/mozzarella"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="90dp">
+
+            <Button
+                android:id="@+id/anullerenBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:text="@string/anulleren"
+                android:textSize="20sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/toevoegenBtn"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="@string/toevoegen"
+                android:textSize="20sp"
+                tools:ignore="ButtonStyle" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</ScrollView>

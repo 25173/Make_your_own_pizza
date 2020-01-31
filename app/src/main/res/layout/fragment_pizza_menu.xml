@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.menu.PizzaMenu"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/_90_00"
+        android:textColor="#000000"
+        android:textSize="36sp" />
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/salami"
+            style="@style/PizzaButtonStyle"
+            android:text="@string/salami"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp" />
+
+        <Button
+            android:id="@+id/makeOwnPizza"
+            style="@style/PizzaButtonStyle"
+            android:layout_width="250dp"
+            android:text="@string/maak_je_eigen_pizza" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/magerita"
+            style="@style/PizzaButtonStyle"
+            android:text="@string/magerita"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <Button
+            android:id="@+id/quatroStationi"
+            style="@style/PizzaButtonStyle"
+            android:text="@string/quatro_stagione"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/quatroFormazzi"
+            style="@style/PizzaButtonStyle"
+            android:text="@string/quatroformazzi"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <Button
+            android:id="@+id/napolitana"
+            style="@style/PizzaButtonStyle"
+            android:text="@string/napolitana"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/vegan"
+            style="@style/PizzaButtonStyle"
+            android:text="@string/vegan"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <Button
+            android:id="@+id/BackToMain"
+            style="@style/PizzaButtonStyle"
+            android:text="@string/anulleren"
+            />
+    </TableRow>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/splash">
+
+
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.example.makeyourownpizza.ui.splash.Splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splash_to_table_id"
+            app:destination="@id/table_id" />
+    </fragment>
+    <fragment
+        android:id="@+id/main"
+        android:name="com.example.makeyourownpizza.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_main_to_make_pizza"
+            app:destination="@id/custom_pizza" />
+        <action
+            android:id="@+id/action_main_to_drinkMenu3"
+            app:destination="@id/drinkMenu3" />
+        <action
+            android:id="@+id/action_main_to_pizzaMenu"
+            app:destination="@id/pizzaMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/custom_pizza"
+        android:name="com.example.makeyourownpizza.ui.menu.CustomPizza"
+        android:label="fragment_custom_pizza"
+        tools:layout="@layout/fragment_custom_pizza">
+        <action
+            android:id="@+id/action_custom_pizza_to_main2"
+            app:destination="@+id/main" />
+    </fragment>
+    <fragment
+        android:id="@+id/table_id"
+        android:name="com.example.makeyourownpizza.TableId"
+        android:label="fragment_table_id"
+        tools:layout="@layout/fragment_table_id">
+        <action
+            android:id="@+id/action_table_id_to_main"
+            app:destination="@id/main" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinkMenu3"
+        android:name="com.example.makeyourownpizza.ui.menu.DrinkMenu"
+        android:label="fragment_drink_menu"
+        tools:layout="@layout/fragment_drink_menu">
+        <action
+            android:id="@+id/action_drinkMenu3_to_main"
+            app:destination="@id/main" />
+    </fragment>
+    <fragment
+        android:id="@+id/pizzaMenu"
+        android:name="com.example.makeyourownpizza.ui.menu.PizzaMenu"
+        android:label="fragment_pizza_menu"
+        tools:layout="@layout/fragment_pizza_menu">
+        <action
+            android:id="@+id/action_pizzaMenu_to_custom_pizza"
+            app:destination="@id/custom_pizza" />
+        <action
+            android:id="@+id/action_pizzaMenu_to_main"
+            app:destination="@id/main" />
+    </fragment>
+</navigation>
